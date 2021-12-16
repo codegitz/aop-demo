@@ -6,7 +6,7 @@ import java.sql.*;
  * @author Codegitz
  * @date 2021/12/13 17:44
  **/
-public class Demo {
+public class DataBaseDemo {
 
     // MySQL 8.0 以下版本 - JDBC 驱动名及数据库 URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";

@@ -1,5 +1,6 @@
 package io.codegitz;
 
+import io.codegitz.entity.Point;
 import io.codegitz.service.DemoService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -13,5 +14,12 @@ public class AspectjTest {
     public void testDemoServiceAspectJ() {
         DemoService demoService = new DemoService();
         demoService.sayHello();
+    }
+
+    @Test
+    public void testThisJoinPoint() {
+        Point point = new Point();
+        point.setX(1);
+        Assertions.assertEquals(1,point.getX());
     }
 }
